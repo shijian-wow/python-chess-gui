@@ -13,7 +13,7 @@ To run this game, you will need the following:
 - Python installed on your computer
 - requirements.txt installed
 
-To install the game, simply download the zip file from releases and extract its contents to a directory on your computer. Then, open a terminal or command prompt and navigate to the directory where you extracted the files. Type `python main.py` to launch the game.
+To install the game, simply download the zip file from `releases` and extract its contents to a directory on your computer. Then, open a terminal or command prompt and navigate to the directory where you extracted the files. Type `python main.py` to launch the game.
 
 ### How to install requirements.txt?
 
