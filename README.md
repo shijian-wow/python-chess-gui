@@ -6,6 +6,11 @@
 
 Welcome to Chess against Stockfish! This is a simple chess game that allows you to play against the powerful Stockfish engine. The game features various sounds to enhance your experience, including move-self sounds, check sounds, checkmate sounds, game start and end sounds, and capture sounds.
 
+[![Github All Releases](https://img.shields.io/github/downloads/shijian-wow/Python-Chess-GUI/total.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Maintainer](https://img.shields.io/badge/maintainer-shijian-red)
+[![GitHub release](https://img.shields.io/github/release/shijian-wow/Python-Chess-GUI.svg)](https://GitHub.com/shijian-wow/Python-Chess-GUI/releases/)
+
 ## Requirements
 
 To run this game, you will need the following:
