@@ -1,6 +1,6 @@
 # Chess against Stockfish
 
-<p align="center"><img src="./pictures/gameplay.png" alt="gameplay"></img></p>
+![Preview](./pictures/preview.png)
 
 ## Introduction
 
