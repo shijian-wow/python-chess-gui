@@ -30,7 +30,8 @@ pip install -r requirements.txt
 
 ## Minimum System Requirements
 
-Just get some 8 core/16 thread CPU with 16-64GB of RAM and the cheapest non-integrated graphics card you can find. The cpus with integrated graphics perform a little less well for chess purposes compared to their "pure" cpu counterparts. With a setup like that, you can do it all without feeling handicapped
+> ### Windows & Linux-Ubuntu
+> https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2
 
 ## Gameplay
 
