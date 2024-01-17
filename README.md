@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ## Gameplay
 
-The game starts with Stockfishs move as white (It depends on FEN code that imported so it means sometimes stockfish would be black)
+The game sometimes starts with Stockfish move as white, It depends on your FEN code, that means sometimes Stockfish would not start first but it's always white
 
 One of best features of this project that you can import a FEN code and start playing against Stockfish engine
 
