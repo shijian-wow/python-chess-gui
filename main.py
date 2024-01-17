@@ -35,15 +35,17 @@ black_king   = pygame.image.load('./assets/black_king.png')
 
 chess.Color = True
 
-rfen = ""
-
-if len (sys.argv) < 2:
-    board = chess.Board()
-else:
+def create_board():
+    rfen = ""
     for i in sys.argv[1:]:
         rfen += i + " "
     rfen = rfen[:-1]
-    board = chess.Board(rfen)
+    if len (sys.argv) < 2 and rfen == "":
+        return chess.Board()
+    else:
+        return chess.Board(rfen)
+
+board = create_board()
 
 
 possible_moves_ = []
@@ -153,18 +155,21 @@ running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            running = False
+            engine_.close()
+            sys.exit(0)
         
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
-                running = False
+                engine_.close()
+                sys.exit(0)
             elif event.key == pygame.K_t:
                 pygame.mixer.Sound("./assets/game-start.mp3").play()
-                board.reset()
+                board = create_board()
                 before_path     = ""
                 selected_piece  = ""
                 possible_moves_ = []
                 promote_to = ""
+                bot_turn = True
             elif event.key == pygame.K_b:
                 promote_to = "b"
             elif event.key == pygame.K_n:
