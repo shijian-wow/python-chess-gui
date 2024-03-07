@@ -1,77 +1,128 @@
+<!--
+Thanks for visiting this project
+
+  Author:
+      shijian-wow@github, https://github.com/shijian-wow
+  
+  Details:
+      This project made with Love by shijian-wow@github, if you want to see more
+      projects which those made by me, check out https://github.com/shijian-wow
+  
+  License:
+      This project is licensed under MIT license, and here is the license content:
+  
+          MIT License
+      
+          Copyright (c) 2024 shijian-wow
+          
+          Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the "Software"), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software, and to permit persons to whom the Software is
+          furnished to do so, subject to the following conditions:
+          
+          The above copyright notice and this permission notice shall be included in al
+          copies or substantial portions of the Software.
+          
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+          SOFTWARE.
+-->
+
 # Chess against Stockfish
 
-![Preview](./pictures/preview.png)
+![Preview](./assets/gameplay-preview-1.png)
 
-## Introduction
+This project made for playing chess against **Stockfish**. You don't have to worry about performance in new versions (0.2.0+) because performance problem has been solved.
 
-Welcome to Chess against Stockfish! This is a simple chess game that allows you to play against the powerful Stockfish engine. The game features various sounds to enhance your experience, including move-self sounds, check sounds, checkmate sounds, game start and end sounds, and capture sounds.
+## Features
 
-[![GitHub Downloads (all assets, all releases](https://img.shields.io/github/downloads/shijian-wow/Python-Chess-GUI/total.svg)]()
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/shijian-wow/Python-Chess-GUI/latest/total)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![Maintainer](https://img.shields.io/badge/maintainer-shijian-red)
-[![GitHub release](https://img.shields.io/github/release/shijian-wow/Python-Chess-GUI.svg)](https://GitHub.com/shijian-wow/Python-Chess-GUI/releases/)
-![GitHub forks](https://img.shields.io/github/forks/shijian-wow/Python-Chess-GUI)
-![GitHub Repo stars](https://img.shields.io/github/stars/shijian-wow/Python-Chess-GUI)
+### Generals
 
-## Requirements
+* **Drag and drop pieces** - You can drag pieces and drop them to move your pieces if it's legal.
+* **Sound effects** -
+This project contains sound effects to improve your game experience.
 
-To run this game, you will need the following:
+### Game modes
 
-- Python installed on your computer
-- requirements.txt installed
+* **Singleplayer** - You can play with your friends or family members.
+* **Multiplayer** - You can play with your friends or family members.
+* **Bot versus itself** - You can watch stockfish while playing against itself.
 
-To install the game, simply download the zip file from `releases` and extract its contents to a directory on your computer. Then, open a terminal or command prompt and navigate to the directory where you extracted the files. Type `python main.py` to launch the game.
+## Installation
 
-### How to install requirements.txt?
+To install the chess game, you need to install **Python3** and required libraries. So let's get started:
 
-This requires `pip` installed, If you have pip then simply go to directory you have extracted zip file then open CMD or Command Line in same directory and then type the below things
+1. Download and install **Python3** (version 311 is recommended).
 
-```cmd
-pip install -r requirements.txt
-```
+2. Open a command line.
 
-## Minimum System Requirements
+3. Install required libraries using one of following commands:
 
-> ### Windows & Linux-Ubuntu
-> https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2
+~~~~~~~~~~~~~~~markdown
+* (If you prefer using Makefile)
+$ make install-deps
 
-## Gameplay
+* (On Windows systems)
+$ pip install -r equirements.txt
 
-The game sometimes starts with Stockfish move as white, It depends on your FEN code, that means sometimes Stockfish would not start first but it's always white
+* (On Linux systems)
+$ pip3 install -r requirements.txt
+~~~~~~~~~~~~~~~
 
-One of best features of this project that you can import a FEN code and start playing against Stockfish engine
+4. Extract the zip file that you downloaded from the releases.
 
-If you want to promote a pawn to a queen, rook, bishop, or knight, press one of the following keys:
+5. Enjoy playing chess against Stockfish, if you don't know how to play game, see [Usage](#usage) section.
 
-'q' for queen
-'r' for rook
-'n' for knight
-'b' for bishop
+## Usage
 
-And then click on the promotion square
+### How to execute/run game?
 
-## Sounds
+To execute the game, you must install dependencies first, if you don't know how to install it see [Installation](#installation)
+section to install.
 
-The game includes several sounds to enhance your experience:
+If you have installed all dependencies then open a command line, and use one of following commands to execute game:
 
-- Move-self sounds: When you move a piece, you will hear a sound indicating which piece you moved.
-- Check sounds: When you put the opponent's king in check, you will hear a sound alerting you to the fact.
-- Checkmate sounds: When you checkmate the opponent's king, you will hear a victory fanfare.
-- Game start and end sounds: At the beginning and end of each game, you will hear a brief musical flourish.
-- Capture sounds: When you capture an opponent's piece, you will hear a sound effect indicating the capture.
+~~~~~~~~~~~~~~~markdown
+* (If you prefer using Makefile)
+$ make run
 
-## Keyboard Shortcuts
+* (On Windows systems)
+$ py chess-gui.py [OPTION]
 
-The following keyboard shortcuts are available during gameplay:
+* (On Linux systems)
+$ python3 chess-gui.py [OPTION]
+~~~~~~~~~~~~~~~
 
-'T': Reset the board to default.
-Esc or Close Button: Exit the game.
+Replace [OPTION] with optional arguments relevant to your usage.
 
-## Issuses
+### Optional arguments
 
-If there's something wrong with the project, Feel free to create an issuse in issuses section
+ Options | Description | Valid values
+---------|-------------|--------------
+ --fen, --starting-fen or --board-starting-fen | this option defines the starting fen of board. | An valid fen code
+ --game-type | this option defines the type of game | `singleplayer`, `multiplayer` or `bot_versus_itself`
+ --color | this option defines your color, and this only works in `singleplayer` mode | `white` or `black`
 
-## License
+## Gameplay preview
 
-This game is released under the MIT License. See LICENSE.txt for more information.
+![Preview1](./assets/gameplay-preview-1.png)
+![Preview2](./assets/gameplay-preview-2.png)
+
+## Open source libraries
+
+* [**PyGame**](https://github.com/pygame/pygame/) - Open Source python programming language
+library for making multimedia applications like games built on top of the excellent SDL
+library. C, Python, Native, OpenGL.
+
+* [**python-chess**](https://github.com/niklasf/python-chess/) - A chess library for
+Python, with move generation and validation, PGN parsing and writing, Polyglot opening
+book reading, Gaviota tablebase probing, Syzygy tablebase probing, and UCI/XBoard engine
+communication.
+
+* [**Click**]() - Python composable command line interface toolkit.
