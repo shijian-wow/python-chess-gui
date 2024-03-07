@@ -573,7 +573,7 @@ def initialize_game(fen, game_type, color):
     global dragging
     dragging = [False, "", None]
     
-    start_game(fen, game_type, chess.WHITE if color=="white" else chess.BLACK)
+    start_game(fen, game_type, chess.WHITE if color=="white" or game_type == 'multiplayer' else chess.BLACK)
 
 if __name__ == "__main__":
     initialize_game()
