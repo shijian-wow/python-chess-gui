@@ -38,6 +38,11 @@ Thanks for visiting this project
 
 ![Preview](./assets/gameplay-preview-1.png)
 
+![Made with ♥](https://img.shields.io/badge/Made%20with%20♥-F92669?style=flat)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/shijian-wow/python-chess-gui/total?style=flat)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/shijian-wow/python-chess-gui/latest/total?style=flat)
+
+
 This project made for playing chess against **Stockfish**. You don't have to worry about performance in new versions (0.2.0+) because performance problem has been solved.
 
 ## Features
