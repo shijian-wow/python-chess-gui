@@ -38,7 +38,7 @@ Thanks for visiting this project
 
 ![Preview](./assets/gameplay-preview-1.png)
 
-![Made with ♥](https://img.shields.io/badge/Made%20with%20♥-F92669?style=flat)
+![Made with ♥](https://img.shields.io/badge/Made%20with%20♥-white?style=flat&lableColor=000)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/shijian-wow/python-chess-gui/total?style=flat)
 ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/shijian-wow/python-chess-gui/latest/total?style=flat)
 
