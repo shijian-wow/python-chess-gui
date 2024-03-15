@@ -56,9 +56,11 @@ endif
         pip install -r requirements.txt
     else ifeq ($(SYSTEM),LINUX)
         pip3 install -r requirements.txt
+    endif
 
 .run:
     ifeq ($(SYSTEM),WINDOWS)
         py chess-gui.py
     else ifeq ($(SYSTEM),LINUX)
         python3 chess-gui.py
+    endif
